@@ -1,0 +1,8 @@
+
+@for (todo of todos(); track todo) {
+  {{ todo.title }}
+  {{ todo.description }}
+  Créé : {{ todo.created_at | date:'short' }}
+  Modifié : {{ todo.updated_at | date:'short' }}
+  <br>
+}
